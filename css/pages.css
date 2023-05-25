@@ -6,6 +6,18 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+p{
+    font-size: 10px;
+	font-weight: 200;
+}
+
+.underscored {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #953F73;
+    font-weight: 900;
+    padding-right: 50;
+}
+
 h1{
     font-size: 2.5rem;
     font-weight: 700;
@@ -15,35 +27,7 @@ h1{
     padding-right: 50px;
 }
 
-h2, h3 {
-	font-size: 1.5rem;
-	font-weight: 700;
-	padding-bottom: 4px;
-}
-
-.pages{
-	font-size: 1rem;
-}
-
-h4{
-	font-size: 12px;
-}
-
-.stage{
-	font-weight: bolder;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	margin-left: 25%;
-	margin-right:25%;
-	border: 1px solid #953F73;
-}
-
-p {
-	font-size: 10px;
-	font-weight: 200;
-}
-
-.d-flex.justify-content-center.flex-column.text-center.banner {
+.banner {
 	background-image: url(../resources/img/banner.jpg);
     background-position: 25% 15%;
     height: 300px;
@@ -55,15 +39,11 @@ p {
     padding-bottom: 50px;
 }
 
-.d-flex.justify-content-center.flex-column.text-center.banner > div {
+.banner > div {
 	border-top: 4px solid white;
 	border-bottom: 4px solid white;
 	padding-top: 5.3rem;
 	padding-bottom: 5.3rem;
-}
-
-.d-flex.justify-content-center.flex-column.text-center > p {
-	color: #953F73;
 }
 
 .h2-subtitle{
@@ -82,12 +62,7 @@ p {
 .text-center{
 	margin-top: 0;
 }
-/*
-.col-sm-2.text-center{
-	margin-right: 1px;
-	border: 2px solid red;
-}
-*/
+
 .col-sm-2.text-center > h3{
 	text-align: left;
 	padding-left: 20px;
@@ -98,37 +73,37 @@ p {
 	padding-left: 20px;
 }
 
-.rounded{
-	width: 70%;
-}
-
 main {
 	padding: 4%;
-	padding-top: 50px;
-	border-top: 1px solid #953F73;
+	padding-top: 20px;
 	margin-top: 5px;
 }
 
-.ordering{
-	margin-top:2%;
-}
-
-button{
+.back-button{
 	border: 1px solid #953F73;
 	background-color: transparent;
 	color: #953F73;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
+    font-weight: 800;
 	padding: 2px;
-	width: 35%;
+    margin-bottom: 10px;
+	width: 10%;
 }
 
-.vr{
-	padding-bottom: 15%;
-	width: 2px;
-	margin-left: 50%;
-	background-color: #953F73;
-	opacity: 1;
+
+/*================================ RESPONSIVE PROPERTIES ==========================================*/
+@media(max-width: 500px) {
+p{
+	color: black;
 }
 
-/*================================ @media{} ==========================================*/
+	.rounded-icon{
+		width: 40%;
+	}
+
+	.col-sm-3{
+		flex: 0 0 auto;
+		width: 40%;
+	}
+}
