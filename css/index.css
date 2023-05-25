@@ -121,7 +121,7 @@ button{
 
 .vr{
 	padding-bottom: 15%;
-	width: 2px;
+	width: 1px;
 	margin-left: 50%;
 	background-color: #953F73;
 	opacity: 1;
@@ -129,16 +129,34 @@ button{
 
 /*================================ RESPONSIVE PROPERTIES ==========================================*/
 @media(max-width: 500px) {
-p{
-	color: black;
-}
-
+	
 	.rounded-icon{
 		width: 40%;
 	}
 
-	.col-sm-3{
-		flex: 0 0 auto;
-		width: 40%;
+	.link-container {
+		flex-direction: column;
+		justify-content: left;
+		text-align: left;
+	  }
+
+	.desc-container{
+		flex-direction: column;
+	  }
+
+	.rounded-icon{
+		width:20%
+	}
+
+	.vr{
+		padding-bottom: 22%;
+	}
+
+	.vr.vr-mid{
+		padding-bottom: 30%;
+	}
+
+	.vr.vr-last{
+		padding-bottom: 30%;
 	}
 }
